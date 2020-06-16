@@ -80,7 +80,8 @@ window.onscroll = () => {
 }
 
 //Go Top Click
-goTop.addEventListener('click', () => {
+
+/*goTop.addEventListener('click', () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = $('html,body').animate({scrollTop: 0}, 1000);
 });
@@ -92,6 +93,18 @@ abajo.addEventListener('onclick', () => {
   document.documentElement.scrollTop = $('html,body').animate({scrollTop: 700}, 1000);
   
 });
+*/
+
+$('.go-top').click(function(){
+  $('html,body').animate({scrollTop: 0}, 1000)
+
+});
+
+$('#abajo').click(function(){
+  $('html,body').animate({scrollTop: 700}, 1000)
+
+});
+
 
 /* Efecto lento en scroll cuando se pulsa en el menu */
 
